@@ -1,3 +1,10 @@
 img {height: 40px;}
 
-* {background-color: rgb(6, 175, 6);}
+p { font-size: xx-large;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    font-style: oblique;
+    color: rgb(34, 34, 47);
+ }
+
+div {border: 0px;} 
