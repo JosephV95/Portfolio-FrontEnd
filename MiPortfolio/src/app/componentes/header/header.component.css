@@ -1,4 +1,6 @@
-img {height: 40px;}
+img {height: 40px;
+    
+}
 
 p { font-size: xx-large;
     font-family: Georgia, 'Times New Roman', Times, serif;
@@ -7,4 +9,4 @@ p { font-size: xx-large;
     color: rgb(34, 34, 47);
  }
 
-div {border: 0px;} 
+ 

@@ -1,0 +1,7 @@
+.row {padding: 30px; }
+
+img {/*efectos para la foto */
+    border-bottom-right-radius: 15%;
+    border-top-left-radius: 20%;  
+    box-shadow: 5px 5px 5px black;}
+
