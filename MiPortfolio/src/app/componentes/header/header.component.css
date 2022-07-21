@@ -1,12 +1,23 @@
-img {height: 40px;
-    
+img {height: 30px;
+     margin: 2px;    
 }
+.logoAP {height: 40px;
+        float: left;}
 
-p { font-size: xx-large;
+p { font-size: 3em;
     font-family: Georgia, 'Times New Roman', Times, serif;
     text-align: center;
     font-style: oblique;
     color: rgb(34, 34, 47);
  }
 
- 
+#redes {padding-top: 8px;
+        float: right
+      }
+
+.btn {float: right;
+      padding: 5px;
+      border-color: crimson;
+      border-width: medium;  }
+
+
