@@ -20,4 +20,7 @@ p { font-size: 3em;
       border-color: crimson;
       border-width: medium;  }
 
+#encabezado { background-image: url(../../../assets/developer.png);
+              background-size: contain;
+              background-repeat: no-repeat;}
 

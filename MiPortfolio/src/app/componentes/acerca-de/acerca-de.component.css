@@ -1,8 +1,11 @@
 .row {padding: 40px;
        }
 
-img {/*efectos para la foto */
-    border-bottom-right-radius: 15%;
-    border-top-left-radius: 20%;  
-    box-shadow: 5px 5px 5px black;}
+img {border-bottom-right-radius: 15%;
+     border-top-left-radius: 20%;  
+     box-shadow: 4px 4px 4px black;}
+
+#nombre {text-align: center;
+         padding-top: 5px; 
+         }
 
