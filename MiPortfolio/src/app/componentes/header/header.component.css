@@ -4,11 +4,11 @@ img {height: 30px;
 .logoAP {height: 40px;
         float: left;}
 
-p { font-size: 3em;
+p { color: white;
+    font-size: 3em;
     font-family: Georgia, 'Times New Roman', Times, serif;
     text-align: center;
     font-style: oblique;
-    color: rgb(34, 34, 47);
  }
 
 #redes {padding-top: 8px;
@@ -17,7 +17,6 @@ p { font-size: 3em;
 
 .btn {float: right;
       padding: 5px;
-      border-color: crimson;
       border-width: medium;  }
 
 #encabezado { background-image: url(../../../assets/developer.png);
