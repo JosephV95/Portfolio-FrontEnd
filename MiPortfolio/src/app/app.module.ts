@@ -12,6 +12,8 @@ import { NgCircleProgressModule } from 'ng-circle-progress';
 import { ProyectosComponent } from './componentes/proyectos/proyectos.component';
 import { FooterComponent } from './componentes/footer/footer.component';
 import { IniciarSesionComponent } from './componentes/iniciar-sesion/iniciar-sesion.component';
+import { HomeComponent } from './componentes/home/home.component';
+import { HttpClientModule,HttpClient} from '@angular/common/http';
 
 
 @NgModule({
@@ -24,12 +26,14 @@ import { IniciarSesionComponent } from './componentes/iniciar-sesion/iniciar-ses
     SkillsComponent,
     ProyectosComponent,
     FooterComponent,
-    IniciarSesionComponent
+    IniciarSesionComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     NgCircleProgressModule.forRoot({}),
+    HttpClientModule,
     
   ],
 
