@@ -7,26 +7,26 @@
 
             <h3 class="mb-5">Iniciar Sesión</h3>
 
-            <div class="form-outline mb-4">
-              <input type="email" id="typeEmailX-2" class="form-control form-control-lg" />
-              <label class="form-label" for="typeEmailX-2">Email</label>
-            </div>
-
-            <div class="form-outline mb-4">
-              <input type="password" id="typePasswordX-2" class="form-control form-control-lg" />
-              <label class="form-label" for="typePasswordX-2">Contraseña</label>
-            </div>
-
-            <!-- Checkbox 
-            <div class="form-check d-flex justify-content-start mb-4">
-              <input class="form-check-input" type="checkbox" value="" id="form1Example3" />
-              <label class="form-check-label" for="form1Example3"> Remember password </label>
-            </div>
-            -->
-
-            <button class="btn btn-primary btn-lg btn-block" type="submit">Ingresar</button>
+            <p class="text-black-50 mb-5">Por favor, Ingresa usuario y contraseña</p>
             
+            <form #f="ngForm" (ngSubmit)="onLogin()" novalidate>
+                <div class="form-outline mb-4">
+                  <input type="email" id="nombreUsuario" name="nombreUsuario" class="form-control form-control-lg" [(ngModel)]="nombreUsuario" [ngModelOptions]="{standalone: true}" required>
+                  <label class="form-label" for="nombreUsuario">Usuario</label>
+                </div>
 
+                <div class="form-outline mb-4">
+                  <input type="password" id="password" class="form-control form-control-lg" [(ngModel)]="password" [ngModelOptions]="{standalone: true}" required/>
+                  <label class="form-label" for="password">Contraseña</label>
+                </div>
+                <!-- Checkbox 
+                <div class="form-check d-flex justify-content-start mb-4">
+                  <input class="form-check-input" type="checkbox" value="" id="form1Example3" />
+                  <label class="form-check-label" for="form1Example3"> Remember password </label>
+                </div>       -->
+                <button class="btn btn-primary btn-lg " type="submit">Ingresar</button>
+            
+            </form>
             
           </div>
         </div>
