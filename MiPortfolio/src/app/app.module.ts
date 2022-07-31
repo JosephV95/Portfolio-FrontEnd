@@ -15,6 +15,7 @@ import { FooterComponent } from './componentes/footer/footer.component';
 import { IniciarSesionComponent } from './componentes/iniciar-sesion/iniciar-sesion.component';
 import { HomeComponent } from './componentes/home/home.component';
 import { HttpClientModule,HttpClient} from '@angular/common/http';
+import { interceptorProvider } from './servicio/interceptor-service';
 
 
 @NgModule({
@@ -40,7 +41,9 @@ import { HttpClientModule,HttpClient} from '@angular/common/http';
         
   ],
 
-  providers: [],
+  providers: [
+    interceptorProvider
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
