@@ -2,7 +2,10 @@
        }
 img {border-bottom-right-radius: 15%;
      border-top-left-radius: 20%;  
-     box-shadow: 4px 4px 4px black;}
+     box-shadow: 4px 4px 4px black;
+     border: 5px solid red;
+     
+}
 
 #nombre {text-align: center;
          padding-top: 4px; 

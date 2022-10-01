@@ -1,5 +1,6 @@
 img {height: 30px;
-     margin: 2px;    
+     margin: 2px;
+     
 }
 .logoAP {height: 40px;
         float: left;}
@@ -24,3 +25,11 @@ p { color: white;
               background-repeat: no-repeat;}
 
 h3 {display: inline;}
+
+.container-fluid{
+      position: fixed;
+}
+
+.container{
+      padding-top: 40px;
+ }
