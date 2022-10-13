@@ -1,9 +1,9 @@
 .row {padding: 40px;
        }
-img {border-bottom-right-radius: 15%;
-     border-top-left-radius: 20%;  
+img {border-bottom-right-radius: 3em;
+     border-top-left-radius: 3em;  
      box-shadow: 4px 4px 4px black;
-     border: 5px solid red;
+     border: 5px inset rgba(0, 38, 255, 0.948);
      
 }
 
@@ -15,5 +15,19 @@ img {border-bottom-right-radius: 15%;
             color: black;
             font-size: large;
             padding: 5px;
-            display: inline;}
+            display: inline;
+            }
+.btn-right:hover{ 
+     color:whitesmoke}
+
+.container{
+     background-color: rgb(0, 157, 254);
+     border: 10px inset rgb(0, 38, 255, 0.948);
+     border-radius: 3em;   
+}
+
+.container:hover{
+     box-shadow: 15px 15px 15px rgb(0, 205, 246);
+}
+
 
