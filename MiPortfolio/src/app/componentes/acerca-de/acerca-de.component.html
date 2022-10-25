@@ -1,8 +1,8 @@
 <div class="container">
     <div class="row">
-        <div class="col-xs-12 col-sm-4 col-md-3 col-lg-3 col-xl-3">
+        <div class="col-xs-8 col-sm-4 col-md-3 col-lg-3 col-xl-3">
             <img src="{{persona.foto_url}}" class="img-fluid">  
-            <div class=" items" *ngIf="editarNombre">
+            <div class=" editar" *ngIf="editarNombre">
                 <h4>Modificar Nombre</h4>
                 <div>
                     <input type="text" [(ngModel)]="persona.nombre" placeholder="Nombre">
@@ -31,7 +31,7 @@
                     <i class="fa-solid fa-pen-clip"></i>
                 </a>
             </div>
-            <div class=" items" *ngIf="logged">
+            <div class=" editar" *ngIf="logged">
                 <h4>Modificar descripción</h4>
                 <div>
                     <textarea class="form-control" [(ngModel)]="persona.sobre_mi" style="height: 100px; width: 200px;" placeholder="Colocar nueva descripción"></textarea>

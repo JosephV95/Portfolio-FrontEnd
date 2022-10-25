@@ -1,0 +1,36 @@
+<div class="container">
+    <div class="row">
+        <div class="col-9">
+            <div class="items" >
+                <h4>Agregar Educación</h4>
+                <div class="mb-3">
+                    <form [formGroup]="form"  (ngSubmit)="guardar()">
+                        <div class="form-group"  >
+                            <label for="nomEdu" ><b>Nombre del Titulo </b></label>
+                            <input formControlName="nomEdu"  type="text" class="form-control"   placeholder="Nombre del Título">
+                        </div>
+                        <div class="form-group"  >
+                            <label for="instEdu" ><b>Nombre de la Institución </b></label>
+                            <input formControlName="instEdu"  type="text" class="form-control"   placeholder="Nombre de la Institución">
+                        </div>
+                        <div class="form-group">
+                            <label for="aniosEdu"> <b>Duración </b></label>
+                            <input formControlName="aniosEdu" type="text" class="form-control"   placeholder="Duración de Educación">
+                        </div>
+                        <div class="form-group">
+                            <label for="descEdu"> <b>Descripcion </b></label>
+                            <textarea formControlName="descEdu" type="text" class="form-control"  placeholder="Colocar Descripcion" rows="3"> </textarea>
+                        </div>
+                        <br>
+                        <button class="btn btn-success" type="submit" >
+                            <i class="fa-solid fa-floppy-disk"></i> Guardar</button>
+                        <button class="btn btn-danger" (click)="cancelar()" style="margin-left: 10px;">
+                            <i class="fa-solid fa-ban"></i> Cancelar</button>
+
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+

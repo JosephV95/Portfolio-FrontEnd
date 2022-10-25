@@ -22,8 +22,6 @@ export class ExpAddComponent implements OnInit {
     })
    }
   
-  experiencia: Experiencia = new Experiencia("","","");
-
   ngOnInit(): void {
   }
   

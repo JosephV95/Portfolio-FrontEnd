@@ -1,23 +1,26 @@
 <div id="fondo">
-
     <div class="container">
         <div class="row">
             <div class="col-8 offset-2">
                 <div class="items" >
-                    <h4>Modificar Experiencia</h4>
+                    <h4>Modificar Educacion</h4>
                     <div   >
                         <form [formGroup]="form"  (ngSubmit)="actualizar()">
                             <div class="form-group"  >
-                                <label for="nomExp" >Nombre del Cargo</label>
-                                <input formControlName="nomExp"  type="text" class="form-control"   placeholder="Colocar Nombre del cargo">
+                                <label for="nomEdu" >Nombre del Cargo</label>
+                                <input formControlName="nomEdu"  type="text" class="form-control"   placeholder="Nombre del Título">
                             </div>
                             <div class="form-group">
-                                <label for="aniosExp">Duración</label>
-                                <input formControlName="aniosExp" type="text" class="form-control"   placeholder="Colocar Duración">
+                                <label for="instEdu">Duración</label>
+                                <input formControlName="instEdu" type="text" class="form-control"   placeholder="Nombre de la Institución">
                             </div>
                             <div class="form-group">
-                                <label for="descripcionExp">Descripcion</label>
-                                <textarea formControlName="descripcionExp" type="text" class="form-control"  placeholder="Descripcion" rows="3"> </textarea>
+                                <label for="aniosEdu">Duración</label>
+                                <input formControlName="aniosEdu" type="text" class="form-control"   placeholder="Duración de Educación">
+                            </div>
+                            <div class="form-group">
+                                <label for="descEdu">Descripcion</label>
+                                <textarea formControlName="descEdu" type="text" class="form-control"  placeholder="Colocar Descripcion" rows="3"> </textarea>
                             </div>
                             <button class="btn btn-success" type="submit" >
                                 <i class="fa-solid fa-floppy-disk"></i> Guardar</button>

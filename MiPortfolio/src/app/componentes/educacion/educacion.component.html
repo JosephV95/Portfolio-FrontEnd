@@ -2,25 +2,32 @@
     <div class="row">
         <div class="col col-12">
             <h3>Educación</h3>
+            <div  class="btn-edit">
+                <button  class="btn btn-success" (click)="nuevo()" style="margin-left: 30px;">
+                    <i class="fa-regular fa-square-plus"></i> Agregar</button>
+            </div>
+            <div  *ngIf="modoAgregarEdu">
+                <app-educ-add></app-educ-add>
+            </div>
+
             <ul>
-                <li>
-                    <h4>Tecnicatura en Mantenimiento Industrial </h4>
-                    <h5>Instituto Tecnológico Universitario (Universidad Nacional de Cuyo)</h5>
-                    <h6>(2015 - 2019)</h6>
-                    <p>Tecnicatura de Grado Universitario</p>
-                </li>
-                <li>
-                    <h4>Full-Stack Developer Junior </h4>
-                    <h5>Argentina Programa (INTI, Ministerio de Desarrollo Productivo Argentina</h5>
-                    <h6>(2021 - 2022)</h6>
-                    <p>Curso de Desarrollador Web Full-Stack</p>
-                </li>
-                <li>
-                    <h4>Estudio 3 </h4> <h5>(años)</h5>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto rerum sit incidunt exercitationem non iste totam, magni delectus hic ipsam consequatur. Ipsum qui porro error officiis consequuntur velit sapiente enim.</p>
+                <li *ngFor="let Educacion of educaciones"> 
+                    <!-- Con los ! digo que los id van a tener un valor y no seran undefined (comoen model experiencia  id?)-->
+                    <div class="btnList">
+                        <button class="btn btn-warning" (click)="editarEdu(Educacion.id!)">
+                            <i class="fa-solid fa-pen-clip"></i> Editar</button> 
+                        <button class="btn btn-danger" (click)="borrarEdu(Educacion.id!)"  style="margin-left: 10px;">
+                            <i class="fa-solid fa-trash-can"></i> Eliminar</button> 
+                    </div>
+                    <h4>{{Educacion.nomEdu}}</h4>
+                    <h5>{{Educacion.instEdu}}</h5>
+                    <h5>({{Educacion.aniosEdu}})</h5>
+                    <p>{{Educacion.descEdu}}</p>
                     
                 </li>
             </ul>
         </div>
     </div>
 </div>
+
+
