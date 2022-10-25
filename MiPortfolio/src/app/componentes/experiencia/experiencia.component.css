@@ -1,5 +1,5 @@
-h4, h5{ display: inline;}
-
+/* h4, h5{ display: inline;} */
+button{ display: inline;}
 .container{
      margin: 30px auto;
      background-color: rgb(0, 157, 254);
@@ -9,4 +9,9 @@ h4, h5{ display: inline;}
 }
 .container:hover{
      box-shadow: 15px 15px 15px rgb(0, 205, 246);
+}
+
+.btnList{
+     display: inline;
+     float: right;
 }

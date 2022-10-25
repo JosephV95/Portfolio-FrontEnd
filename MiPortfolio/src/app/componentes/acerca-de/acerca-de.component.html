@@ -1,31 +1,51 @@
 <div class="container">
     <div class="row">
         <div class="col-xs-12 col-sm-4 col-md-3 col-lg-3 col-xl-3">
-            
-            <img src="../../../assets/MiFoto.jpg" class="img-fluid">  
-            <div class="btn-edit"  onclick="cambiar_parrafo()">
-                <a href="#" class="btn-right">
-                <i class="fa-solid fa-pen-clip"></i>
-                </a>         
+            <img src="{{persona.foto_url}}" class="img-fluid">  
+            <div class=" items" *ngIf="editarNombre">
+                <h4>Modificar Nombre</h4>
+                <div>
+                    <input type="text" [(ngModel)]="persona.nombre" placeholder="Nombre">
+                    <input type="text" [(ngModel)]="persona.apellido" placeholder="Apellido">
+                </div>
+                <div>
+                    <button type="button" class="btn btn-danger btn-sm" (click)="cancelName()">Cancelar</button>
+                    <button type="button" class="btn btn-success btn-sm" (ngSubmit)="save()">Guardar</button>
+                </div>
+
+            </div> 
+            <div  class="btn-edit">
+                <a class="btn-right" (click)="editName()">
+                    <i class="fa-solid fa-pen-clip"></i>
+                </a>  
             </div>
             <div id="nombre">
-                <h4>{{persona.apellido}} {{persona.nombre}}</h4> 
-                <h5><b><u>Full-Stack Developer Jr.</u></b></h5>
-            </div>                   
+                <h4>{{persona.nombre}} {{persona.apellido}}</h4> 
+                <h5><b><u>{{persona.titulo}}</u></b></h5>
+            </div>
+                              
         </div>
         <div class="col-xs-12 col-sm-8 col-md-9 col-lg-9 col-xl-9">
             <div class="btn-edit"  onclick="cambiar_parrafo()">
-                <a href="#" class="btn-right">
-                    <i class="fa-solid fa-trash-can"></i>
+                <a (click)="editItem()" class="btn-right">
+                    <i class="fa-solid fa-pen-clip"></i>
                 </a>
-                <a href="#" class="btn-right">
-                  <i class="fa-solid fa-pen-clip"></i>
-                </a>         
+            </div>
+            <div class=" items" *ngIf="logged">
+                <h4>Modificar descripción</h4>
+                <div>
+                    <textarea class="form-control" [(ngModel)]="persona.sobre_mi" style="height: 100px; width: 200px;" placeholder="Colocar nueva descripción"></textarea>
+                </div>
+                <div>
+                    <button type="button" class="btn btn-danger btn-sm" (click)="cancelEdit()">Cancelar</button>
+                    <button type="button" class="btn btn-success btn-sm" >Guardar</button>
+                </div>
+
             </div>
             <div>
                 <h3>Acerca de mí</h3>
                 
-                <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, sequi. Ab amet beatae veniam accusamus deserunt, placeat voluptatibus fugiat incidunt et quisquam id, enim optio consequatur, tempora accusantium rem illo!</p>
+                <p>{{persona.sobre_mi}} </p>
             </div>
         </div>
     </div>

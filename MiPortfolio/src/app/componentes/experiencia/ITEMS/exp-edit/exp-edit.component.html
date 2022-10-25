@@ -1,0 +1,31 @@
+<div class="container"      >
+    <div class="row">
+        <div class="col-9">
+            <div class="items" >
+                <h4>Modificar Experiencia</h4>
+                <div   >
+                    <form >
+                        <div class="form-group"  >
+                            <label for="nomExp" >Nombre del Cargo</label>
+                            <input type="text" class="form-control" id="nomExp" name="nomExp" [(ngModel)]="experiencia.nomExp" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="aniosExp">Años</label>
+                            <input type="text" class="form-control" id="aniosExp" name="aniosExp"[(ngModel)]="experiencia.aniosExp" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="descripcionExp">Descripcion</label>
+                            <textarea type="text" class="form-control" id="descripcionExp" name="descripcionExp"[(ngModel)]="experiencia.descripcionExp"  required> </textarea>
+                        </div>
+                        <button class="btn btn-success" (click)="editar()" >Guardar</button>
+                        
+
+                    </form>
+                </div>
+
+            </div>
+
+            
+        </div>
+    </div>
+</div>

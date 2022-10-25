@@ -4,7 +4,6 @@ img {border-bottom-right-radius: 3em;
      border-top-left-radius: 3em;  
      box-shadow: 4px 4px 4px black;
      border: 5px inset rgba(0, 38, 255, 0.948);
-     
 }
 
 #nombre {text-align: center;
@@ -25,9 +24,22 @@ img {border-bottom-right-radius: 3em;
      border: 10px inset rgb(0, 38, 255, 0.948);
      border-radius: 3em;   
 }
-
 .container:hover{
      box-shadow: 15px 15px 15px rgb(0, 205, 246);
 }
 
+.items{
+     background: #00c6ff;  /* fallback for old browsers */
+     background: -webkit-linear-gradient(to right, #0072ff, #00c6ff);  /* Chrome 10-25, Safari 5.1-6 */
+     background: linear-gradient(to right, #0072ff, #00c6ff); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+     position: absolute;
+     border: 5px solid rgba(16, 47, 223, 0.859) ;
+     border-radius: 2em;
+     padding: 2em;
+          
+}
+.items:hover{
+     box-shadow: 10px 10px 10px rgb(0, 205, 246);
+}
 
