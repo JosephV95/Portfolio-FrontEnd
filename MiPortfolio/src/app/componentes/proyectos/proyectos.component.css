@@ -1,4 +1,7 @@
-img { display: cover;  }
+img { display: cover; 
+    width: 20vw;
+    margin: 10px;
+ }
 
 .container {
     margin: 30px auto;
@@ -9,4 +12,23 @@ img { display: cover;  }
 }
 .container:hover{
     box-shadow: 15px 15px 15px rgb(0, 205, 246);
+}
+
+.btnList{
+     display: inline;
+     float: right;
+     padding-right: 50px;
+}
+.btnList {
+    color: black;
+    font-size: 1.4em;
+}
+
+
+.btn-edit{
+    background: none;
+    border: none;
+}
+.btn-edit:hover{
+    color: #fff;
 }

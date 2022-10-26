@@ -1,0 +1,37 @@
+<div id="fondo">
+    <div class="container">
+        <div class="row">
+            <div class="col-8 offset-2">
+                <div class="items">
+                    <h4>Editar Proyecto</h4>
+                    <div >
+                        <form [formGroup]="form" (ngSubmit)="actualizar()">
+                            <div class="form-group"  >
+                                <label for="nomPro" ><b>Nombre del Proyecto </b></label>
+                                <input formControlName="nomPro"  type="text" class="form-control"   placeholder="Nombre del Proyecto">
+                            </div>
+                            <div class="form-group">
+                                <label for="descPro"> <b>Descripcion </b></label>
+                                <textarea formControlName="descPro" type="text" class="form-control"  placeholder="Colocar Descripcion" rows="3"> </textarea>
+                            </div>
+                            <div class="form-group"  >
+                                <label for="fotoPro" ><b>Imagen del Proyecto </b></label>
+                                <input formControlName="fotoPro"  type="text" class="form-control"   placeholder="Imagen del Proyecto">
+                            </div>
+                            <div class="form-group">
+                                <label for="linkPro"> <b>Link del Proyecto </b></label>
+                                <input formControlName="linkPro" type="text" class="form-control"   placeholder="Dirección del Proyecto">
+                            </div>
+                            <br>
+                            <button class="btn btn-success" type="submit" >
+                                <i class="fa-solid fa-floppy-disk"></i> Guardar</button>
+                            <button class="btn btn-danger" routerLink="/" style="margin-left: 10px;">
+                                <i class="fa-solid fa-ban"></i> Cancelar</button>
+                            
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

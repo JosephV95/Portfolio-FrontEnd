@@ -1,13 +1,58 @@
 <div class="container">
-    <div class="row">
-        <h3>Proyectos</h3>
-        <div class="col-xs-6 col-sm-4 col-lg-4 col-xl-4">
-            <h5> <i>Mi Portfolio</i></h5>
-            <!-- <p>El objetivo de este proyecto es dar a conocer mis habilidades como desarrollador Web Full-Stack Jr. </p> -->
-            <P>El proyecto esta desarrollado implementando herramientas como Angular, Boostrap, MySQL, Java, SpringBoots, entre otras.</P>
-        </div>
-        <div class="col-xs-6 col-2">
-            <img src="../../../assets/Foto.png" class="img-fluid">
-        </div>
+    <h3>Proyectos</h3>
+    <div>
+        <button class="btn btn-success" (click)="nuevo()" style="margin-left: 30px;">
+            <i class="fa-regular fa-square-plus"></i> Agregar</button>
+    </div>
+    <br>
+    <app-pro-add *ngIf="modoAgregarPro"></app-pro-add>
+    <div class="row"  >
+            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-4 col-xl-4" *ngFor="let Proyecto of proyectos">
+                <div class="btnList">
+                    <button (click)="editarPro(Proyecto.id!)" class="btn-edit">
+                            <i class="fa-solid fa-pen-clip"></i> 
+                    </button>
+                    <button (click)="borrarPro(Proyecto.id!)" class="btn-edit" >
+                        <i class="fa-solid fa-trash-can"  ></i> 
+                    </button>
+                </div>
+                <h4><i>{{Proyecto.nomPro}}</i></h4>
+                <p>{{Proyecto.descPro}}</p>
+                <a href="{{Proyecto.linkPro}}" target="_blank">
+                    <button class="btn btn-primary">Visitar Proyecto </button>
+                </a>
+                <br>
+                <img src="{{Proyecto.fotoPro}}" >
+            </div>
     </div>
 </div>
+
+<!-- <div class="container">
+    <div class="row">
+        <h3>Proyectos</h3>
+        <div class=" col-xs-4 col-md-4 col-sm-6" >
+            <h5> <i> JOse luis vilte developer jr</i></h5>
+            <P>El proyecto esta desarrollado implementando herramientas como Angular, Boostrap, MySQL, Java,
+                SpringBoots, entre otras.</P>
+        </div>
+        <div class=" col-xs-4 col-md-4 col-sm-6" >
+       
+            <img src="../../../assets/Foto.png" class="img-fluid">
+        </div>
+        <div class=" col-xs-4 col-md-4 col-sm-6" >
+            <h5> <i> JOse luis vilte developer jr</i></h5>
+            <P>El proyecto esta desarrollado implementando herramientas como Angular, Boostrap, MySQL, Java,
+                SpringBoots, entre otras.</P>
+            <img src="../../../assets/Foto.png" class="img-fluid">
+        </div>
+        <div class=" col-4" >
+            <h5> <i> JOse luis vilte developer jr</i></h5>
+            <P>El proyecto esta desarrollado implementando herramientas como Angular, Boostrap, MySQL, Java,
+                SpringBoots, entre otras.</P>
+        </div>
+        <div class="col-2">
+            <img src="../../../assets/Foto.png" class="img-fluid">
+        </div>
+        
+    </div>
+</div> -->

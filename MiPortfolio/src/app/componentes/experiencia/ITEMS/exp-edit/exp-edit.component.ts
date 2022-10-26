@@ -17,7 +17,6 @@ export class ExpEditComponent implements OnInit {
   
   constructor(private expService: ExperienciaService, private activatedRouter: ActivatedRoute, private router: Router, private fb: FormBuilder) { 
     this.id = Number(activatedRouter.snapshot.paramMap.get('id'));  //Setteo el id como un number
-    console.log(this.id);
 
     this.form = this.fb.group({
       nomExp: ['', Validators.required],
