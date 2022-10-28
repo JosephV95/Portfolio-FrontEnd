@@ -26,7 +26,7 @@ export class ProAddComponent implements OnInit {
   }
 
   guardar(){
-    console.log("Proyecto Agregada");
+    console.log("Proyecto Agregado");
     const proyecto: Proyecto = {
       nomPro: this.form.value.nomPro,
       descPro: this.form.value.descPro,
@@ -38,7 +38,7 @@ export class ProAddComponent implements OnInit {
        alert(`¡El Proyecto ${proyecto.nomPro} se agrego con Exito!`);
        this.proService.setModoAgregarPro(false);
        this.router.navigate(['']);
-       location.reload(); //con este comando recargo la pagina y se cargar las experiencias
+       location.reload(); //con este comando recargo la pagina
      });
      console.log(this.form);
   }

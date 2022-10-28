@@ -6,6 +6,7 @@ import { IniciarSesionComponent } from './componentes/iniciar-sesion/iniciar-ses
 import { ExpEditComponent } from './componentes/experiencia/ITEMS/exp-edit/exp-edit.component';
 import { EducEditComponent } from './componentes/educacion/ITEMS/educ-edit/educ-edit.component';
 import { ProEditComponent } from './componentes/proyectos/ITEMS/pro-edit/pro-edit.component';
+import { EditSkillFrontComponent } from './componentes/skills/front/edit-skill-front/edit-skill-front.component';
 
 const routes: Routes = [
   {path:'', component: HomeComponent},
@@ -15,6 +16,9 @@ const routes: Routes = [
   {path:'edit/:id', component: ExpEditComponent},
   {path:'edu-edit/:id', component: EducEditComponent},
   {path:'pro-edit/:id', component: ProEditComponent},
+  {path:'sf-edit/:id', component: EditSkillFrontComponent},
+
+  //Para el progressbar
 
 ];
 

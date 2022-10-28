@@ -1,0 +1,31 @@
+<div class="container">
+    <div class="row">
+        <div class="col-6">
+            <div class="items">
+                <h4>Agregar Skill Front-End</h4>
+                <div >
+                    <form [formGroup]="form" (ngSubmit)="guardar()">
+                        <div class="form-group"  >
+                            <label for="nomSkillF" ><b>Nombre de la Skill </b></label>
+                            <input formControlName="nomSkillF"  type="text" class="form-control"   placeholder="Nombre de la Skill">
+                        </div>
+                        <div class="form-group">
+                            <label for="icoSkillF"> <b>Icono de la Skill </b></label>
+                            <input formControlName="icoSkillF" type="text" class="form-control"  placeholder="Nombre en FontAwensome ej: fa-brands fa-html5">
+                        </div>
+                        <div class="form-group"  >
+                            <label for="porcSkillF" ><b>Porcentaje de la Skill</b></label>
+                            <input formControlName="porcSkillF"  type="number" min="0" max="100" class="form-control" >
+                        </div>
+                        <br>
+                        <button class="btn btn-success" type="submit" >
+                            <i class="fa-solid fa-floppy-disk"></i> Guardar</button>
+                        <button class="btn btn-danger" (click)="cancelar()" style="margin-left: 10px;">
+                            <i class="fa-solid fa-ban"></i> Cancelar</button>
+                        
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

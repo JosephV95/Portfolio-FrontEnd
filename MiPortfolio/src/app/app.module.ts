@@ -9,7 +9,7 @@ import { ExperienciaComponent } from './componentes/experiencia/experiencia.comp
 import { AcercaDeComponent } from './componentes/acerca-de/acerca-de.component';
 import { EducacionComponent } from './componentes/educacion/educacion.component';
 import { SkillsComponent } from './componentes/skills/skills.component';
-import { NgCircleProgressModule } from 'ng-circle-progress';
+// import { NgCircleProgressModule } from 'ng-circle-progress';
 import { ProyectosComponent } from './componentes/proyectos/proyectos.component';
 import { FooterComponent } from './componentes/footer/footer.component';
 import { IniciarSesionComponent } from './componentes/iniciar-sesion/iniciar-sesion.component';
@@ -20,14 +20,19 @@ import { interceptorProvider } from './servicio/interceptor-service';
 ///NO ESTOY DEGURO SI SE IMPORTA EL EXPERIENCIA SERVICE
 import { ExperienciaService } from './servicio/experiencia-service';
 import { EducacionService } from './servicio/educacion-service';
-import { ProyectoService } from './servicio/proyecto.service'
+import { ProyectoService } from './servicio/proyecto.service';
+import { SkillFrontService } from './servicio/skill-front.service';
+
 
 import { ExpAddComponent } from './componentes/experiencia/ITEMS/exp-add/exp-add.component';
 import { ExpEditComponent } from './componentes/experiencia/ITEMS/exp-edit/exp-edit.component';
 import { EducAddComponent } from './componentes/educacion/ITEMS/educ-add/educ-add.component';
 import { EducEditComponent } from './componentes/educacion/ITEMS/educ-edit/educ-edit.component';
 import { ProAddComponent } from './componentes/proyectos/ITEMS/pro-add/pro-add.component';
-import { ProEditComponent } from './componentes/proyectos/ITEMS/pro-edit/pro-edit.component'
+import { ProEditComponent } from './componentes/proyectos/ITEMS/pro-edit/pro-edit.component';
+import { AddSkillFrontComponent } from './componentes/skills/front/add-skill-front/add-skill-front.component';
+import { EditSkillFrontComponent } from './componentes/skills/front/edit-skill-front/edit-skill-front.component';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap'
 
 
 
@@ -50,6 +55,8 @@ import { ProEditComponent } from './componentes/proyectos/ITEMS/pro-edit/pro-edi
     EducEditComponent,
     ProAddComponent,
     ProEditComponent,
+    AddSkillFrontComponent,
+    EditSkillFrontComponent,
     
   ],
   imports: [
@@ -57,8 +64,9 @@ import { ProEditComponent } from './componentes/proyectos/ITEMS/pro-edit/pro-edi
     FormsModule,
     ReactiveFormsModule,  //Lo agregue para formularios reactivos
     AppRoutingModule,
-    NgCircleProgressModule.forRoot({}),
+    // NgCircleProgressModule.forRoot({}),
     HttpClientModule,
+    NgbModule,
         
   ],
 
@@ -68,6 +76,7 @@ import { ProEditComponent } from './componentes/proyectos/ITEMS/pro-edit/pro-edi
     ExperienciaService,
     EducacionService,
     ProyectoService,
+    SkillFrontService,
   ],
   bootstrap: [AppComponent]
 })

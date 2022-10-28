@@ -1,9 +1,9 @@
-.btn-right {float: right;
+/* .btn-right {float: right;
     color: black;
     font-size: 1.2em;
     margin: auto 3px;
     display: inline-flex;
-}
+} */
 h3{display: inline;
     margin-bottom: 4px;}
 
@@ -23,3 +23,35 @@ h4{text-align: center;}
 h6{ margin-bottom: 2px;
 }
 
+.btnList{
+    display: inline;
+    float: right;
+    /* padding-right: 10px; */
+}
+.btnList {
+   color: black;
+   font-size: 1.3em;
+}
+.btn-edit{
+    background: none;
+    border: none;
+}
+.btn-edit:hover{
+    color: #fff;
+}
+
+
+/*Unica manera que encontre de personalizar el progress bar  */
+.barra{
+    border-radius: 10px;
+    height: 18px;
+    width: 300px;
+}
+.barra::-webkit-progress-bar{
+    border-radius: 10px;
+    background: #fff;
+}
+.barra::-webkit-progress-value{
+    border-radius: 10px;
+    background: red;
+}
