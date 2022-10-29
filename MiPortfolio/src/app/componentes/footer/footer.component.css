@@ -1,7 +1,10 @@
 .container-fluid {
         background-color: rgb(10, 63, 196);
 
-        font-size: 15px;
+        font-size: 1.4em;
         color: white;
         text-align: center;
+        line-height: 1.1;
+
+        font-family: 'Kanit', sans-serif;
 }

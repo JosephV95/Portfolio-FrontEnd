@@ -21,7 +21,6 @@ export class ExperienciaComponent implements OnInit {
   isLogged = false;
 
   // experiencia: Experiencia = new Experiencia("","","");
-
   
   ngOnInit(): void {
     this.expService.getExperiencias().subscribe(data =>{this.experiencias=data});
@@ -36,9 +35,7 @@ export class ExperienciaComponent implements OnInit {
   nuevo(){
     this.modoAgregar = true;
   }
-  // cancelar(){
-  //   this.modoAgregar= false;
-  // }
+ 
 
   editarExp(id: number):void{
     console.log(id);

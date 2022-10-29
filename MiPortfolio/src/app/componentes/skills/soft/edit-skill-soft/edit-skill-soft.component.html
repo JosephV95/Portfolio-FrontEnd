@@ -1,26 +1,25 @@
 <div id="fondo">
     <div class="container">
         <div class="row">
-            <div class="col-6   offset-2">
+            <div class="col-6  offset-2">
                 <div class="items">
                     <h4>Editar Skill</h4>
                     <div>
                         <form [formGroup]="form" (ngSubmit)="actualizar()">
                             <div class="form-group">
-                                <label for="nomSkillF"><b>Nombre de la Skill </b></label>
-                                <input formControlName="nomSkillF" type="text" class="form-control"
+                                <label for="nomSkillS"><b>Nombre de la Skill </b></label>
+                                <input formControlName="nomSkillS" type="text" class="form-control"
                                     placeholder="Nombre de la Skill">
                             </div>
                             <div class="form-group">
-                                <label for="icoSkillF"> <b>Icono de la Skill </b></label>
-                                <input formControlName="icoSkillF" type="text" class="form-control"
+                                <label for="icoSkillS"> <b>Icono de la Skill </b></label>
+                                <input formControlName="icoSkillS" type="text" class="form-control"
                                     placeholder="Nombre en FontAwensome ej: fa-brands fa-html5">
                             </div>
-                            <div class="form-group">
-                                <label for="porcSkillF"><b>Porcentaje de la Skill</b></label>
-                                <input formControlName="porcSkillF" type="number" min="0" max="100"
-                                    class="form-control">
-                            </div>
+                            <!-- <div class="form-group"  >
+                            <label for="porcSkillB" ><b>Porcentaje de la Skill</b></label>
+                            <input formControlName="porcSkillB"  type="number" min="0" max="100" class="form-control" >
+                        </div> -->
                             <br>
                             <button class="btn btn-success" type="submit">
                                 <i class="fa-solid fa-floppy-disk"></i> Guardar</button>

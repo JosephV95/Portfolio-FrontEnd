@@ -22,6 +22,9 @@ import { ExperienciaService } from './servicio/experiencia-service';
 import { EducacionService } from './servicio/educacion-service';
 import { ProyectoService } from './servicio/proyecto.service';
 import { SkillFrontService } from './servicio/skill-front.service';
+import { SkillBackService } from './servicio/skill-back.service';
+import { SkillSoftService } from './servicio/skill-soft.service';
+import { PersonaService } from './servicio/persona.service';
 
 
 import { ExpAddComponent } from './componentes/experiencia/ITEMS/exp-add/exp-add.component';
@@ -32,7 +35,12 @@ import { ProAddComponent } from './componentes/proyectos/ITEMS/pro-add/pro-add.c
 import { ProEditComponent } from './componentes/proyectos/ITEMS/pro-edit/pro-edit.component';
 import { AddSkillFrontComponent } from './componentes/skills/front/add-skill-front/add-skill-front.component';
 import { EditSkillFrontComponent } from './componentes/skills/front/edit-skill-front/edit-skill-front.component';
-import { NgbModule } from '@ng-bootstrap/ng-bootstrap'
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { AddSkillBackComponent } from './componentes/skills/back/add-skill-back/add-skill-back.component';
+import { EditSkillBackComponent } from './componentes/skills/back/edit-skill-back/edit-skill-back.component';
+import { EditSkillSoftComponent } from './componentes/skills/soft/edit-skill-soft/edit-skill-soft.component';
+import { AddSkillSoftComponent } from './componentes/skills/soft/add-skill-soft/add-skill-soft.component';
+import { EditPersonaComponent } from './componentes/acerca-de/item/edit-persona/edit-persona.component'
 
 
 
@@ -57,6 +65,11 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap'
     ProEditComponent,
     AddSkillFrontComponent,
     EditSkillFrontComponent,
+    AddSkillBackComponent,
+    EditSkillBackComponent,
+    EditSkillSoftComponent,
+    AddSkillSoftComponent,
+    EditPersonaComponent,
     
   ],
   imports: [
@@ -77,6 +90,9 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap'
     EducacionService,
     ProyectoService,
     SkillFrontService,
+    SkillBackService,
+    SkillSoftService,
+    PersonaService,
   ],
   bootstrap: [AppComponent]
 })

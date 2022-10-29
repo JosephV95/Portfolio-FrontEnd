@@ -2,7 +2,7 @@
     <div class="row">
         <div class="col col-12">
             <h3>Experiencia Laboral</h3>
-            <div  class="btn-edit">
+            <div  class="btn-edit"  *ngIf="isLogged">
                 <button  class="btn btn-success" (click)="nuevo()" style="margin-left: 30px;">
                     <i class="fa-regular fa-square-plus"></i> Agregar</button>
             </div>
@@ -13,15 +13,15 @@
             <ul>
                 <li *ngFor="let Experiencia of experiencias"> 
                     <!-- Con los ! digo que los id van a tener un valor y no seran undefined (comoen model experiencia  id?)-->
-                    <div class="btnList">
-                        <button class="btn btn-warning" (click)="editarExp(Experiencia.id!)">
+                    <div class="btnList"    *ngIf="isLogged">
+                        <button class="btn btn-warning  btn-sm" (click)="editarExp(Experiencia.id!)">
                             <i class="fa-solid fa-pen-clip"></i> Editar</button> 
-                        <button class="btn btn-danger" (click)="borrarExp(Experiencia.id!)"  style="margin-left: 10px;">
+                        <button class="btn btn-danger  btn-sm" (click)="borrarExp(Experiencia.id!)"  style="margin-left: 10px;">
                             <i class="fa-solid fa-trash-can"></i> Eliminar</button> 
                     </div>
                     <h4>{{Experiencia.nomExp}}</h4>
                     <h5>({{Experiencia.aniosExp}})</h5>
-                    <p>{{Experiencia.descripcionExp}}</p>
+                    <p><i>{{Experiencia.descripcionExp}}</i></p>
                     
                 </li>
             </ul>

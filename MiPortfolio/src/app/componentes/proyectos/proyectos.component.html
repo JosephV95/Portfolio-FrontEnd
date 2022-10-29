@@ -1,6 +1,6 @@
 <div class="container">
     <h3>Proyectos</h3>
-    <div>
+    <div    *ngIf="isLogged">
         <button class="btn btn-success" (click)="nuevo()" style="margin-left: 30px;">
             <i class="fa-regular fa-square-plus"></i> Agregar</button>
     </div>
@@ -8,7 +8,7 @@
     <app-pro-add *ngIf="modoAgregarPro"></app-pro-add>
     <div class="row"  >
             <div class="col-xs-12 col-sm-12 col-md-6 col-lg-4 col-xl-4" *ngFor="let Proyecto of proyectos">
-                <div class="btnList">
+                <div class="btnList"    *ngIf="isLogged">
                     <button (click)="editarPro(Proyecto.id!)" class="btn-edit">
                             <i class="fa-solid fa-pen-clip"></i> 
                     </button>
@@ -19,7 +19,7 @@
                 <h4><i>{{Proyecto.nomPro}}</i></h4>
                 <p>{{Proyecto.descPro}}</p>
                 <a href="{{Proyecto.linkPro}}" target="_blank">
-                    <button class="btn btn-primary">Visitar Proyecto </button>
+                    <button class="btn btn-primary"><i class="fa-solid fa-link"></i> Visitar Proyecto </button>
                 </a>
                 <br>
                 <img src="{{Proyecto.fotoPro}}" >

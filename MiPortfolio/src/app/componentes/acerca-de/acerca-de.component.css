@@ -18,7 +18,7 @@ img {border-bottom-right-radius: 3em;
             font-size: large;
             padding: 5px;
             display: inline;
-            }
+}
 .btn-right:hover{ 
      color:whitesmoke}
 
@@ -30,18 +30,26 @@ img {border-bottom-right-radius: 3em;
 .container:hover{
      box-shadow: 15px 15px 15px rgb(0, 205, 246);
 }
+#encabezado { 
+     padding-top: 50px;
+     margin-bottom: 20px;
+     color: white;
+     font-size: 2.5em;
+     font-family: Georgia, 'Times New Roman', Times, serif;
+     text-align: center;
+     font-style: oblique;
+     z-index: 10;
 
-.editar{
-     background: #00c6ff;  /* fallback for old browsers */
-     background: -webkit-linear-gradient(to right, #0072ff, #00c6ff);  /* Chrome 10-25, Safari 5.1-6 */
-     background: linear-gradient(to right, #0072ff, #00c6ff); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+     background-size: contain;
+     background-repeat: no-repeat;
+     height: 200px;
+     background-position-y:18px ;
+     background-position: 7vw ;
+  }
 
-     position: absolute;
-     border: 5px solid rgba(16, 47, 223, 0.859) ;
-     border-radius: 2em;
-     padding: 2em;
+  #descripcion>p{
+     font-size: 1.3em;
+     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-.editar:hover{
-     box-shadow: 10px 10px 10px rgb(0, 205, 246);
-}
+
 

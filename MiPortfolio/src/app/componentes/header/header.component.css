@@ -1,16 +1,8 @@
 img {height: 30px;
-     margin: 2px;
-     
+     margin-right: 2px;
 }
 .logoAP {height: 40px;
         float: left;}
-
-p { color: white;
-    font-size: 3em;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    text-align: center;
-    font-style: oblique;
- }
 
 #redes {padding-top: 8px;
         float: right
@@ -20,20 +12,10 @@ p { color: white;
       padding: 5px;
       border-width: medium;  }
 
-#encabezado { background-image: url(../../../assets/developer.png);
-              background-size: contain;
-              background-repeat: no-repeat;
-              height: 200px;
-            }
-
 h3 {display: inline;}
 
 .container-fluid{
       position: fixed;
       }
-
-.container{
-      padding-top: 40px;
-      
- }
+ 
 
