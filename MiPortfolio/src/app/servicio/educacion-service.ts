@@ -15,7 +15,7 @@ export class EducacionService {
     constructor(private http: HttpClient){
     }
 
-    eduURL = 'http://localhost:8080/educacion/'
+    eduURL = 'https://josevilteportfolio.herokuapp.com/educacion/'
 
     getEducaciones(){
         return this.http.get<Educacion[]>(this.eduURL)

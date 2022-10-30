@@ -12,7 +12,7 @@ export class SkillSoftService {
 
   constructor(private http: HttpClient) { }
 
-  ssUrl = 'http://localhost:8080/skill-soft/'
+  ssUrl = 'https://josevilteportfolio.herokuapp.com/skill-soft/'
 
   getSkillsSoft(){
     return this.http.get<SkillSoft[]>(this.ssUrl)

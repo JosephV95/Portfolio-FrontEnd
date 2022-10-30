@@ -14,7 +14,7 @@ export class ExperienciaService {
 
     constructor(private http: HttpClient) {}
 
-    expURL = 'http://localhost:8080/experiencia/'
+    expURL = 'https://josevilteportfolio.herokuapp.com/experiencia/'
 
     //Para traer la lista de experiencia
     getExperiencias(){
