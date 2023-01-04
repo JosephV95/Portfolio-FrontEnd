@@ -12,7 +12,7 @@ export class ProyectoService {
 
   constructor(private http: HttpClient) { }
 
-    proUrl = 'https://josevilteportfolio.herokuapp.com/proyecto/'
+    proUrl = 'https://josevilteportfolio.onrender.com/proyecto/'
 
     getProyectos(){
       return this.http.get<Proyecto[]>(this.proUrl)

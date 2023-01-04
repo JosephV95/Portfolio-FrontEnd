@@ -12,7 +12,7 @@ export class PersonaService {
 
   constructor(private http: HttpClient) { }
 
-  URL = 'https://josevilteportfolio.herokuapp.com/personas/'
+  URL = 'https://josevilteportfolio.onrender.com/personas/'
 
   getPersonas(){
     return this.http.get<Persona[]>(this.URL);

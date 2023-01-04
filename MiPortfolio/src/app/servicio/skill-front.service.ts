@@ -12,7 +12,7 @@ export class SkillFrontService {
 
   constructor(private http: HttpClient) { }
 
-  sfUrl = 'https://josevilteportfolio.herokuapp.com/skill-front/'
+  sfUrl = 'https://josevilteportfolio.onrender.com/skill-front/'
 
   getSkillsFront(){
     return this.http.get<SkillFront[]>(this.sfUrl)

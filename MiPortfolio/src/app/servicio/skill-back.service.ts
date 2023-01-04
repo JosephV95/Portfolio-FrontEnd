@@ -12,7 +12,7 @@ export class SkillBackService {
 
   constructor(private http: HttpClient) { }
 
-  sbUrl = 'https://josevilteportfolio.herokuapp.com/skill-back/'
+  sbUrl = 'https://josevilteportfolio.onrender.com/skill-back/'
 
   getSkillsBack(){
     return this.http.get<SkillBack[]>(this.sbUrl)
